@@ -5,12 +5,12 @@
     <div class="row gy-5 my-5 row-cols-md-3 justify-content-center">
         @forelse ($movies as $movie)
         <div class="col">
-            <div class="card text-center p-2 h-100">
+            <div class="card p-3 h-100">
                 <h3>{{$movie->title}}</h3>
-                <div>{{$movie->original_title}}</div>
-                <div>{{$movie->nationality}}</div>
-                <div>{{$movie->date}}</div>
-                <div>{{$movie->vote}}</div>
+                <div>Original title:{{$movie->original_title}}</div>
+                <div>Nationality:{{$movie->nationality}}</div>
+                <div>Date:{{$movie->date}}</div>
+                <div>Rating:{{$movie->vote}}</div>
             </div>
         </div>
         @empty
